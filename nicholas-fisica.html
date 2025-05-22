@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>La legge dei gravi</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4e1d2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url("newton.jpg");
+            border: 5px solid #daa520;
+            font-size: 32px;
+            font-style: italic;
+            font-family: Georgia;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contenitore {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+
+        .aside-colonna {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        aside {
+            background-color: #f0e68c;
+            width: 400px;
+            height: 500px;
+            padding: 15px;
+            text-align: center;
+            border: 5px solid #daa520;
+            box-sizing: border-box;
+            border-radius: 20px;
+            color: #4b3900;
+            overflow: auto;
+        }
+
+        aside img {
+            width: 100%;
+            height: auto;
+            border: 3px solid #daa520;
+        }
+
+        section {
+            background-color: #C0EAEC;
+            color: #333;
+            padding: 40px;
+            width: 900px;
+            border: 5px solid #f0c040;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-family: Garamond;
+            color: #4b3900;
+        }
+
+        h2 {
+            font-family: Garamond;
+            color: #4b3900;
+        }
+        h3 {
+            font-size: 15px;
+            font-family: Garamond;
+            color: #4b3900;
+        }
+        h4 {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 20px;
+            font-family: Garamond;
+            color: white;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+            text-align: justify;
+            font-family: Garamond;
+        }
+
+        ul {
+            margin: 20px 0;
+            padding-left: 40px;
+            font-size: 20px;
+            font-family: Garamond, serif;
+            color: #333;
+            list-style-type: disc;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+        img#A{border-radius: 100px}
+        img#F{rotate: 270deg;border-radius: 100px}
+        input#freccia{position: absolute; left:10px; top:10px;width: 100px;height: 100px;transition:2s}
+        input#freccia:hover{width: 150px;height: 150px}
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color:saddlebrown;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h4><b>La legge dei gravi</b></h4>
+        <a href="index.html"><input id="freccia" type="image" src="freccia.png"></a>
+    </header>
+
+    <div class="contenitore">
+        <section>
+            <h1><b>Isaac Newton</b></h1>
+    <p>La "legge dei gravi" fu formulata da Isaac Newton nel 1687 e afferma che ogni corpo nell'universo attrae ogni altro corpo con una forza direttamente proporzionale al prodotto delle loro masse e inversamente proporzionale al quadrato della distanza che li separa.</p>
+    <center><img id="A" src="formula.jpg" alt="formula della gravitazione"></center>
+    <h2>dove:</h2>
+    <ul>
+        <li>F è la forza di attrazione gravitazionale tra i due corpi,</li>
+       <li>G è la costante di gravitazione universale</li>
+       <li>𝑚1 e 𝑚2 sono le masse dei due corpi</li>
+       <li>r è la distanza tra i centri dei due corpi.</li>
+   </ul>
+    
+    <h2>Galileo Galilei</h2>
+    <p>Galileo Galilei(1564–1642) fu uno dei primi a studiare sistematicamente il moto dei corpi in caduta. Le sue osservazioni portarono a risultati rivoluzionari:</p> 
+    <ul>
+        <il>Confutazione della teoria aristotelica: Aristotele sosteneva che i corpi più pesanti cadessero più rapidamente. Galileo dimostrò che, in assenza di resistenza dell'aria, tutti i corpi cadono con la stessa accelerazione.</il>
+        <il>Legge del moto uniformemente accelerato: Galileo scoprì che la distanza percorsa da un corpo in caduta libera aumenta proporzionalmente al quadrato del tempo</il></ul>
+        <center><img id="F" src="formula2.jpg"alt="legge del moto uniformemnte accellerato" width="200px" height="auto"></center>
+
+
+    <h2>dove:</h2>
+     <ul>
+         <li>S è la distanza percorsa</li>
+         <li>g≈9.8m/s è l'accelerazione di gravità sulla Terra</li>
+         <li>t è il tempo di caduta</li>
+     </ul>
+
+    <h2> Importanza e sviluppi successivi</h2>
+    <p>La legge di Newton fu valida per oltre due secoli, fino all’avvento della teoria della relatività generale di Albert Einstein nel 1915. Einstein dimostrò che la gravità non è una forza "a distanza" nel senso classico, ma una curvatura dello spazio-tempo causata dalla massa. Tuttavia, la legge di Newton resta perfettamente valida per la maggior parte delle applicazioni quotidiane (ingegneria, orbite satellitari, etc.).
+
+</p></section></div>
+   
+    <footer>
+        Realizzato per l’esposizione scolastica – Ferraro Gabriel, Pederiva Elena, Piazza Simone, Nardi Nicholas, Viviani Samuele
+    </footer>
+</body>
+</html>

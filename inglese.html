@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inglese</title>
+    <style type="text/css">
+      body{font-family: Arial; background-color: #f4e1d2; margin: 0; padding: 0;}
+      header{background-image: url("tsr.jpg");background-size:100%; font-family: Arial; text-align: center; font-style: italic; color: white; margin: 0px; padding: 40px; height: 300px;bottom:75%;font-size: 130%}
+      input#freccia{position: absolute; left:10px; top:10px;width: 100px;height: 100px;transition:2s}
+        input#freccia:hover{width: 150px;height: 150px}
+    a:link{color:white;text-decoration:none}
+      section{width:48%;position:relative; left:5%;border: 3px black double;;font-size: 120%;padding-left: 1.5em;padding-right:1.5em;background-color: #C79A4B;}
+      p{padding: 1em}
+      footer {
+            text-align: center;
+            padding: 20px;
+            background-color:saddlebrown;
+            color: white;
+            font-size: 14px;
+        }
+      img#Due{position:absolute; right: 10px;top: 390px; width:300px;height:350px;clip-path: polygon(50% 0%,90% 50%,50% 100%,10% 50%)}
+      img#Tre{position:absolute; right: 180px;top: 500px; width:300px;height:350px;clip-path: polygon(50% 0%,90% 50%,50% 100%,10% 50%)}
+      img#Uno{position:absolute; right: 58px;top: 680px; width:300px;height:350px;clip-path: polygon(50% 0%,90% 50%,50% 100%,10% 50%)}
+      img#Qua{position:absolute; right: 260px;top: 740px; width:300px;height:350px;clip-path: polygon(50% 0%,90% 50%,50% 100%,10% 50%)}
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1><br>The Scientific Revolution</h1>
+      <a href="index.html"><input id="freccia" type="image" src="freccia.png"></a>
+    </header>
+    <br><br><br>
+    <section>
+      <p>The Scientific Revolution of the 17th century‌‍‏
+
+      The 17th century witnessed a profound transformation in human understanding of the natural world, a period historians call the Scientific Revolution. This intellectual movement marked the emergence of modern science, grounded in observation, experimentation, and the use of reason. It challenged traditional authorities and laid the foundation for the Enlightenment and technological progress in later centuries. 
+<br>
+      At the heart of the revolution was a shift from reliance on ancient texts and philosophical speculation to empirical methods and mathematical reasoning. Figures like Galileo Galilei, Johannes Kepler, and Isaac Newton played central roles. Galileo championed the use of the telescope, providing evidence that contradicted the geocentric model of the universe. Kepler formulated laws of planetary motion, demonstrating that planets orbit the sun in ellipses. Newton unified celestial and terrestrial mechanics through his laws of motion and universal gravitation, published in his Principia Mathematica (1687).  
+<br>
+      This era also saw advancements in scientific instruments, such as microscopes and barometers, which expanded human perception and experimentation. The work of Francis Bacon emphasized inductive reasoning, advocating for systematic observation and the collection of data. René Descartes, on the other hand, promoted deductive reasoning and analytical thinking, famously stating, “Cogito, ergo sum” (“I think, therefore I am”).  
+<br>
+      The Scientific Revolution was not a single event but a complex process involving debates, discoveries, and new institutions, such as scientific academies. It profoundly altered humanity’s view of nature and our place within it, paving the way for modern science and its applications in industry, medicine, and daily life.
+      </p>
+    </section>
+    <br><br><br><br><br><br><br><br><br>
+    <img id="Due" src="im2.jpg" alt="ImmagineDue">
+    <img id="Tre" src="im3.jpg" alt="ImmagineTre">
+    <img id="Uno" src="isaac-newton.jpg" alt="ImmagineUno">
+    <img id="Qua" src="im4.jpg" alt="ImmagineQuattro">
+    <br><br><br>
+    <footer>
+        Realizzato per l’esposizione scolastica – Ferraro Gabriel, Pederiva Elena, Piazza Simone, Nardi Nicholas, Viviani Samuele
+    </footer>
+    <script type="text/javascript">
+    function striscia(id){
+      const p1=document.getElementById(id);
+      p1.style.display=="block" ? p1.style.display="none" : p1.style.display="block";
+    }
+    function modalita_notte(id){
+      const x=document.getElementById(id)
+      x.style.backgroundColor="#483c32";
+      document.getElementById("bruh").style.backgroundColor="#7c6862";
+      document.getElementById("bruh").style.borderColor="#443133";
+    }
+    function modalita_giorno(id){
+      const x=document.getElementById(id)
+      x.style.backgroundColor="#f4e1d2";
+      document.getElementById("bruh").style.backgroundColor="#e6e2d0";
+      document.getElementById("bruh").style.borderColor="#c4b7a6";
+    }
+  </script>
+</body>
+</html>

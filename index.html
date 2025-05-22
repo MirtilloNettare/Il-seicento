@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	<style>
+		body{background:#f4e1d2}
+		header{background-image: url("immagine_home.jpg");text-align: center;font-weight:bold; font-family: Monaco;font-size: 75px;height: 360px;background-size: 100%;padding:70px 0;border-top-right-radius:75px;color: floralwhite}
+		img#verdi{position:absolute;right:1.5%;top:3%;height:85px;width:85px;clip-path:circle(50%);transition: width 2s, height 2s}
+		img#verdi:hover{width:200px;height:200px}
+		img#menulogo{position:absolute;left:1.5%;top:1.5%;height:100px;width:100px;clip-path:circle(48%);opacity:0.5;}
+		img#menulogo:hover{opacity: 0.9;}
+		div#striscione{position:absolute; top:1.9%; left:1.55%; border-radius:300px; font-size:40px; background-color:black; display: none; opacity:0.4; transition: opacity 0.5s; padding-left:0.3em; padding-right: 1em; height:74px;padding-top: 0.5em;width:330px}
+		div#striscione:hover{opacity: 1;}
+		button#modnotte{background: transparent;border: none}
+		img#moon{position:absolute;top:15px;height:60px; width:60px;clip-path:circle(50%)}
+		img#sun{position:absolute;top:15px;left:305px; height:60px; width:60px;clip-path:circle(50%)}
+		nav{position:absolute; top:400px;left: 0%;right: 0%}
+		div#lista{text-align:center}
+		nav ul{border: 5px #c4b7a6 solid;background:#e6e2d0;border-radius:30px}
+		nav li{display:inline-block;text-align:center;font-weight: bold; font-family: Helvetica;font-style: italic; padding: 20px;margin-inline: 13.56px;border-radius:10px;transition: 1s}
+		nav li:hover{background-color: #d2b48c;}
+		article{position: absolute; ; background-color: salmon;heigth:700px;width:100%;}
+		a:link{color:black;text-decoration:none; font-size:38px}
+		img#galileo{clip-path: polygon(50% 0%,90% 50%,50% 100%,10% 50%); position: absolute; top:225px;right:5%;height:375px;width:300px;transition: 1s;border-radius:900px}
+		img#galileo:hover{clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 100%)}
+		p#testgal{position:absolute;top:230px;right:10% ;background-color:#ddc69e;font-size:20px;width:70%;height:250px;border-radius:150px;padding-bottom:1em;padding-top: 2em; padding-left: 4em;padding-right: 10em}
+		img#collo{clip-path: polygon(50% 0%,90% 50%,50% 100%,10% 50%); position: absolute; top:620px;left:5%;height:375px;width:300px;transition: 1s;border-radius:900px;}
+		img#collo:hover{clip-path: polygon(100% 0%,100% 100%,0% 100%,0% 0%)}
+		p#testcol{position:absolute;top:630px;left:10% ;background-color:#ddc69e;font-size:20px;width:70%;height:230px; border-radius:150px;padding-left:10em;padding-top:1em; padding-right: 3em;padding-bottom: 1em}
+		p#testjesus{position:absolute;top:1030px;right:10% ;background-color:#ddc69e;font-size:20px;width:70%;height:250px;border-radius:150px;padding-bottom:1em;padding-top: 2em; padding-left: 4em;padding-right: 10em}
+		img#jesus{clip-path: polygon(50% 0%,90% 50%,50% 100%,10% 50%); position: absolute; top:1030px;right:5%;height:320px;width:300px;transition: 1s;border-radius:900px;}
+		img#jesus:hover{clip-path: polygon(100% 0%,100% 100%,0% 100%,0% 0%)}
+		footer {
+            text-align: center;
+            padding: 20px;
+            background-color:saddlebrown;
+            color: white;
+            font-size: 14px;
+        }
+</style>
+<body id="B">
+	<header id="head"><div id="menu">
+		<h1>Il seicento</h1>
+		<a href="https://isissverdi.edu.it/" target="_blank"><img id="verdi" src="verdi.jpg" title="Visita il sito"></a>
+		<div id="striscione"> Menú  | <button id="modnotte" onclick="modalita_notte('B')"><img id="moon" src="luna.jpg"></button><button id="modgiorno" onclick="modalita_giorno('B')"><img id="sun" src="sole.jpg"></button></div>
+		<button id="menulogo" onclick="striscia('striscione')"><img id="menulogo"src="menu.jpg"></button>
+	</header>
+	<nav><br><div id="lista"><ul id="bruh">
+		<li><a href="italiano.html">Italiano</a></li>
+		<li><a href="scienze.html">Epidemiologia</a></li>
+		<li><a href="storiaart.html">Storia dell'arte</a></li>
+		<li><a href="inglese.html">Inglese</a></li>
+		<li><a href="nicholas-fisica.html">Fisica</a></li>
+	</ul></div>
+	<article><h2><center>Introduzione generale sul periodo</center></h2></article>
+	<script type="text/javascript">
+		function striscia(id){
+			const p1=document.getElementById(id);
+			p1.style.display=="block" ? p1.style.display="none" : p1.style.display="block";
+		}
+		function modalita_notte(id){
+			const x=document.getElementById(id)
+			x.style.backgroundColor="#483c32";
+			document.getElementById("bruh").style.backgroundColor="#7c6862";
+			document.getElementById("bruh").style.borderColor="#443133";
+		}
+		function modalita_giorno(id){
+			const x=document.getElementById(id)
+			x.style.backgroundColor="#f4e1d2";
+			document.getElementById("bruh").style.backgroundColor="#e6e2d0";
+			document.getElementById("bruh").style.borderColor="#c4b7a6";
+		}
+	</script>
+	<div id="1"></div>
+	<p id="testgal">
+	La Guerra dei Trent'anni (1618–1648) 
+
+Introduzione 
+La Guerra dei Trent'anni fu uno dei conflitti più devastanti della storia europea, durato dal 1618 al 1648. Iniziata come una guerra religiosa tra cattolici e protestanti nel Sacro Romano Impero, si trasformò progressivamente in una lotta per l'egemonia politica tra le grandi potenze europee, coinvolgendo nazioni come Spagna, Francia, Svezia e Danimarca.  
+ 
+Cause principali
+Religiose: Tensioni tra cattolici e protestanti, aggravate dalla fragile Pace di Augusta del 1555.  
+Politiche: Tentativi degli Asburgo di centralizzare il potere nel Sacro Romano Impero.
+Economiche e sociali: Crisi agricole, carestie e squilibri economici che alimentarono il malcontento.
+
+Le quattro fasi del conflitto 
+Fase boemo-palatina (1618–1625): Scatenata dalla defenestrazione di Praga, vide la sconfitta dei protestanti boemi nella battaglia della Montagna Bianca.  
+Fase danese (1625–1629): Intervento della Danimarca a favore dei protestanti, conclusosi con la vittoria delle forze imperiali.  
+Fase svedese (1630–1635): La Svezia, guidata da Gustavo Adolfo, ottenne iniziali successi ma subì gravi perdite, incluso il re stesso.  
+Fase franco-svedese (1635–1648): La Francia cattolica si alleò con i protestanti per contrastare gli Asburgo, portando a un conflitto su scala continentale. 
+</p>
+	<img id="galileo" src="galileo.jpg">
+	<p id="testcol">
+		Conseguenze 
+Politiche: La Pace di Westfalia del 1648 sancì la fine del conflitto, riconoscendo l'indipendenza di Svizzera e Paesi Bassi e limitando il potere degli Asburgo.  
+Religiose: Fu riconosciuta la coesistenza di cattolicesimo, luteranesimo e calvinismo nel Sacro Romano Impero.  
+Demografiche ed economiche: La guerra causò la morte di milioni di persone e devastò l'economia di molte regioni europee.
+
+Significato storico 
+La Guerra dei Trent'anni segnò la fine delle grandi guerre di religione in Europa e l'inizio dell'era degli Stati sovrani moderni, basati sul principio della non ingerenza negli affari interni altrui.
+	Le quattro fasi del conflitto 
+Fase boemo-palatina (1618–1625): Scatenata dalla defenestrazione di Praga, vide la sconfitta dei protestanti boemi nella battaglia della Montagna Bianca.  
+Fase danese (1625–1629): Intervento della Danimarca a favore dei protestanti, conclusosi con la vittoria delle forze imperiali.  
+Fase svedese (1630–1635): La Svezia, guidata da Gustavo Adolfo, ottenne iniziali successi ma subì gravi perdite, incluso il re stesso.  
+Fase franco-svedese (1635–1648): La Francia cattolica si alleò con i protestanti per contrastare gli Asburgo, portando a un conflitto su scala continentale. 
+ 
+</p>
+	<img id="collo" src="collolungo.jpg">
+	<p id="testjesus">
+		Conseguenze 
+Politiche: La Pace di Westfalia del 1648 sancì la fine del conflitto, riconoscendo l'indipendenza di Svizzera e Paesi Bassi e limitando il potere degli Asburgo.  
+Religiose: Fu riconosciuta la coesistenza di cattolicesimo, luteranesimo e calvinismo nel Sacro Romano Impero.  
+Demografiche ed economiche: La guerra causò la morte di milioni di persone e devastò l'economia di molte regioni europee.
+
+Significato storico 
+La Guerra dei Trent'anni segnò la fine delle grandi guerre di religione in Europa e l'inizio dell'era degli Stati sovrani moderni, basati sul principio della non ingerenza negli affari interni altrui.
+	</p>
+	<img id="jesus" src="jesus.jpg">
+	<footer>
+        Realizzato per l’esposizione scolastica – Ferraro Gabriel, Pederiva Elena, Piazza Simone, Nardi Nicholas, Viviani Samuele
+    </footer>
+
+
+</body>
+</html>
